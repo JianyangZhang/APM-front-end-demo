@@ -1,0 +1,73 @@
+$width : 25%;
+$margin : 2%;
+$borderWidth : 2%;
+$borderColor:#ffffff;
+$backgroundColor:#466eff;
+
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+ 
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+ 
+  @return $x1;
+}
+
+.hexagon {
+  position: relative;
+  width: $width;
+  height: ($width / sqrt(3));
+  background-color: $backgroundColor;
+  margin: ($width / sqrt(3))/2 0;
+  border-left: solid $borderWidth $borderColor;
+  border-right: solid $borderWidth $borderColor;
+  margin-left:$margin;
+}
+.hexagon:before,
+.hexagon:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: ($width / sqrt(2));
+	height: ($width / sqrt(2));
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: ( ($width - ($width / sqrt(2)))/2 - $borderWidth );
+}
+.hexagon:before {
+  top: -($width / sqrt(2) / 2);
+  border-top: solid ($borderWidth * sqrt(2)) $borderColor;
+  border-right: solid ($borderWidth * sqrt(2)) $borderColor;
+}
+.hexagon:after {
+  bottom: -($width / sqrt(2) / 2);
+  border-bottom: solid ($borderWidth * sqrt(2)) $borderColor;
+  border-left: solid ($borderWidth * sqrt(2)) $borderColor;
+}
+
+.hex-container {
+	// position: relative;
+  padding: 10px 20px !important;
+  -webkit-transition:2s all;
+  -moz-transition:2s all;
+  width:100%;
+  height:270px;
+}
+
+.hex-row {
+	display: flex;
+}
+
+.hex-row:nth-child(2n+1) {
+	transform:translate(($width/2 + $margin/2), 0);
+}
+
+.hex-row:nth-child(2n) {
+	transform:translate(0, -(($width / sqrt(3))/2 - $margin/2));
+}

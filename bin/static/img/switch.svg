@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 20 20"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="switch.svg"
+   width="20"
+   height="20"><defs
+     id="defs12" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="663"
+     id="namedview10"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:zoom="14.519761"
+     inkscape:cx="1.3711393"
+     inkscape:cy="5.0468355"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" /><metadata
+     id="metadata4"> Svg Vector Icons : http://www.onlinewebfonts.com/icon <rdf:RDF><cc:Work
+     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><g
+     id="g6"
+     transform="matrix(0.016731,0,0,0.016731,1.7964665,1.6410405)"
+     style="fill:#ffffff"><path
+       d="M 894.1,19.8 118,10 C 64.4,9.3 20.4,52.2 19.8,105.8 l -9.8,776 c -0.7,53.6 42.2,97.6 95.8,98.3 l 776.1,9.8 c 53.6,0.7 97.6,-42.2 98.3,-95.8 L 990,118 C 990.5,64.5 947.7,20.5 894.1,19.8 Z M 179,98.3 320.1,243.1 370.9,193.6 430.8,429.1 197,363.2 247.8,313.7 106.6,168.9 179,98.3 Z M 367,799.3 317.5,748.5 172.7,889.6 102.1,817.3 246.9,676.2 197.4,625.4 432.9,565.5 367,799.3 Z M 541,542.1 c -23.2,22.7 -60.4,22.2 -83.1,-1 -22.7,-23.2 -22.2,-60.5 1,-83.1 23.2,-22.6 60.4,-22.2 83.1,1 22.7,23.2 22.2,60.4 -1,83.1 z M 820.9,901.6 679.8,756.8 629,806.3 569,570.9 802.9,636.7 752.1,686.2 893.3,831 820.9,901.6 Z M 753,323.8 802.5,374.6 567,434.5 632.8,200.6 682.3,251.4 827.1,110.2 897.7,182.6 753,323.8 Z"
+       id="path8"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff" /></g></svg>

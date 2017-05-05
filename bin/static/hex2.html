@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="css/semantic.min.css" rel="stylesheet">
+<!-- <link href="css/style.css" rel="stylesheet"> -->
+<script src="js/jquery.min.js"></script>
+<script src="js/moment-with-locales.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/echarts.min.js"></script>
+
+
+
+<style type="text/css">
+body {
+  background: #ecf0f1;
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+}
+
+#hex2 {
+  width: 150px;
+  height: 150px;
+}
+
+#hex3 {
+  width: 200px;
+  height: 200px;
+}
+
+#color1 {
+  background-color: #39D; 
+}
+
+#color2 {
+  background-color: #93D;
+}
+
+#color3 {
+  background-color: #D93;
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  /*margin: 0px 10px;*/
+  margin-left:10px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon {
+  width: 100%;
+  height: 57.735%;
+  display: inline-block;
+}
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+
+
+.hex-container {
+  padding: 10px 20px !important;
+ }
+
+.hex-row {
+  display: flex; 
+}
+
+.hex-row:nth-child(2n+1) {
+  transform: translate(55px, 0px); 
+}
+
+/*.hex-row:nth-child(2n) {
+  transform: translate(0px, -32.14102px); 
+}*/
+
+</style>
+
+<script>
+
+</script>
+
+</head>
+
+<body>
+<div class="hex-container" style="margin-top:20px;">
+	<div class="hex-row">
+		<div class="small hexagon-wrapper">
+		    <div id="color1" class="hexagon"></div>
+		</div>
+		<div class="small hexagon-wrapper">
+		    <div id="color1" class="hexagon"></div>
+		</div>
+	</div>
+	<div class="hex-row">
+		<div class="small hexagon-wrapper">
+		    <div id="color1" class="hexagon"></div>
+		</div>
+		<div class="small hexagon-wrapper">
+		    <div id="color1" class="hexagon"></div>
+		</div>
+	</div>
+	<div class="hex-row">
+		<div class="small hexagon-wrapper">
+		    <div id="color1" class="hexagon"></div>
+		</div>
+		<div class="small hexagon-wrapper">
+		    <div id="color1" class="hexagon"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

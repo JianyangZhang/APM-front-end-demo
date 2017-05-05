@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="css/semantic.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/moment-with-locales.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/echarts.min.js"></script>
+
+
+<style type="text/css">
+body{
+	background-color: #f1f1f1;
+}
+
+.hexagon.blue {
+	background-color: #3598dc;
+}
+
+.hexagon.green {
+	background-color: #17a086;
+}
+
+.hexagon.light.blue {
+	background-color: #10b8dc;
+}
+
+.hexagon.light.green {
+	background-color: #19bd9b;
+}
+
+.hexagon .content {
+	width:100%;
+	height:100%;
+	display: flex;
+	flex-flow: column nowrap;
+	color:#fff;
+	z-index: 2;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 3;
+}
+.hexagon .content .title {
+	font-size:14px;
+	width: 100%;
+	text-align: center;
+	margin-bottom:5px;
+}
+
+.hexagon .content .value
+{
+	width: 100%;
+	text-align: center;
+}
+
+.hexagon .content .value .integer
+{
+	font-size:36px;
+	line-height: 30px
+}
+
+.hexagon .content .value .decimal
+{
+	font-size:16px;
+	height:100%;
+	vertical-align: top;;
+}
+
+.hexagon .content .desc {
+	font-size:10px;
+	width: 100%;
+	text-align: center;
+	/*margin-bottom:5px;*/
+}
+
+.hexagon {
+  position: relative;
+  width: 120px;
+  height: 69.28203px;
+  /*background-color: #466eff;*/
+  margin: 34.64102px 0;
+  border-left: solid 5px #ffffff;
+  border-right: solid 5px #ffffff;
+  margin-left: 5px; }
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 84.85281px;
+  height: 84.85281px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 12.57359px; }
+
+.hexagon:before {
+  top: -42.42641px;
+  border-top: solid 7.07107px #ffffff;
+  border-right: solid 7.07107px #ffffff; }
+
+.hexagon:after {
+  bottom: -42.42641px;
+  border-bottom: solid 7.07107px #ffffff;
+  border-left: solid 7.07107px #ffffff; }
+
+.hex-container {
+  position: relative; }
+
+.hex-row {
+  display: flex; }
+
+.hex-row:nth-child(2n+1) {
+  transform: translate(62.5px, -32.14102px); }
+
+.hex-row:first-child {
+  transform: translate(62.5px, 32.14102px); }
+
+/*# sourceMappingURL=hexagon.css.map */
+
+
+</style>
+
+<script>
+var width = 100;
+var borderWidth = 5;
+var scaleFactor = Math.tan(30 * Math.PI / 180);
+var margin = 5
+
+var height = width / Math.sqrt(3);
+var offset = width / Math.sqrt(2) / 2;
+var capWidth = width / Math.sqrt(2);
+var borderOffset = borderWidth / Math.sqrt(3);
+var otherBorderWidth = borderWidth * Math.sqrt(2)
+var left = (width - capWidth)/2 - borderWidth
+var translateX = width/2 + margin/2
+var translateY = height/2 - margin/2
+
+
+console.log("height:"+height)
+console.log("offset:"+offset)
+console.log("capWidth:"+capWidth)
+console.log("borderOffset:"+borderOffset)
+console.log("otherBorderWidth:"+otherBorderWidth)
+console.log("otherBorderWidth:"+otherBorderWidth)
+console.log("scaleFactor:" + scaleFactor)
+console.log("left:" + left)
+console.log("translateX:" + translateX)
+console.log("translateY:" + translateY)
+</script>
+
+</head>
+
+<body>
+<div class="hex-container">
+	<div class="hex-row">
+		<div class="hexagon blue">
+			<div class="content">
+				<div class="title">堆内存</div>
+				<div class="value">
+					<span class="integer">50</span>
+					<span class="decimal">14</span>
+				</div>
+				<div class="desc">使用率</div>
+			</div>
+		</div>
+		<div class="hexagon light blue">
+			<div class="content">
+				<div class="title">会话数</div>
+				<div class="value">
+					<span class="integer">90</span>
+					<span class="decimal">00</span>
+				</div>
+				<div class="desc">active</div>
+			</div>
+		</div>
+		<div class="hexagon light blue">
+			<div class="content">
+				<div class="title">会话数</div>
+				<div class="value">
+					<span class="integer">12</span>
+					<span class="decimal">k</span>
+				</div>
+				<div class="desc">count</div>
+			</div>
+		</div>
+		<div class="hexagon green">
+			<div class="content">
+				<div class="title">线程数</div>
+				<div class="value">
+					<span class="integer">56</span>
+					<span class="decimal">00</span>
+				</div>
+				<div class="desc">count</div>
+			</div>
+		</div>
+	</div>
+	<div class="hex-row">
+		<div class="hexagon green">
+			<div class="content">
+				<div class="title">线程数</div>
+				<div class="value">
+					<span class="integer">24</span>
+					<span class="decimal">00</span>
+				</div>
+				<div class="desc">busy</div>
+			</div>
+		</div>
+		<div class="hexagon light green">
+			<div class="content">
+				<div class="title">每秒请求</div>
+				<div class="value">
+					<span class="integer">1.2</span>
+					<span class="decimal">k</span>
+				</div>
+				<div class="desc">count</div>
+			</div>
+		</div>
+		<div class="hexagon light green">
+			<div class="content">
+				<div class="title">每秒请求</div>
+				<div class="value">
+					<span class="integer">0</span>
+					<span class="decimal">00</span>
+				</div>
+				<div class="desc">error</div>
+			</div>
+		</div>
+		<div class="hexagon light green">
+			<div class="content">
+				<div class="title">每秒请求</div>
+				<div class="value">
+					<span class="integer">98</span>
+					<span class="decimal">00</span>
+				</div>
+				<div class="desc">servlet</div>
+			</div>
+		</div>
+		<div class="hexagon blue">
+			<div class="content">
+				<div class="title">请求处理时间</div>
+				<div class="value">
+					<span class="integer">120</span>
+					<span class="decimal">s</span>
+				</div>
+				<div class="desc">count/s</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "jsx": "react"
+    },
+    "files": [
+        "./typescript/types.d.ts",
+        "./typescript/main.tsx"
+    ]
+}

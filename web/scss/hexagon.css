@@ -1,0 +1,47 @@
+.hexagon {
+  position: relative;
+  width: 110px;
+  height: 63.50853px;
+  background-color: #466eff;
+  margin: 31.75426px 0;
+  border-left: solid 5px #ffffff;
+  border-right: solid 5px #ffffff;
+  margin-left: 5px; }
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 77.78175px;
+  height: 77.78175px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 11.10913px; }
+
+.hexagon:before {
+  top: -38.89087px;
+  border-top: solid 7.07107px #ffffff;
+  border-right: solid 7.07107px #ffffff; }
+
+.hexagon:after {
+  bottom: -38.89087px;
+  border-bottom: solid 7.07107px #ffffff;
+  border-left: solid 7.07107px #ffffff; }
+
+.hex-container {
+  padding: 10px 20px !important;
+  width: 100%; }
+
+.hex-row {
+  display: flex; }
+
+.hex-row:nth-child(2n+1) {
+  transform: translate(57.5px, 0); }
+
+.hex-row:nth-child(2n) {
+  transform: translate(0, -29.25426px); }
+
+/*# sourceMappingURL=hexagon.css.map */
