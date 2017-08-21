@@ -1,5 +1,6 @@
 <h3>APM Web Reporting Tool</h3>
-<b>a lightweight, multi-platform web application to make simple and effective reporting</b>
+<i>a lightweight, multi-platform web application to make simple and effective reporting</i>
+
 <p>video demo: https://youtu.be/HC_H3nN90AU</p>
 
 - Providing reports via a web browser
