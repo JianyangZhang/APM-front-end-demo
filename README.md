@@ -1,5 +1,6 @@
 <h3>APM Web Reporting Tool</h3>
-<i>a lightweight, multi-platform web application to make simple and effective reporting</i><br/>
+
+*a lightweight, multi-platform web application to make simple and effective reporting*
 
 - Providing reports via a web browser
 - A number of report types e.g. tabular, charts, topology graphs
