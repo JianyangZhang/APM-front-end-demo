@@ -6,5 +6,5 @@
 - Providing reports via a web browser
 - A number of report types e.g. tabular, charts, topology graphs
 - Ability to have multiple reports in a single page (dashboards)
-- A number of output formats e.g. xlsx, pdf
+- supporting output formats: .xlsx, .pdf
 - Simple to install and use
