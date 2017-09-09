@@ -1,10 +1,7 @@
-<h3>APM Web Reporting Tool</h3>
+<h3>APM Demo - Web Reporting</h3>
 
-*a lightweight, multi-platform web application to make simple and effective reporting*
-
-- Providing reports via a web browser
-- A number of report types e.g. tabular, charts, topology graphs
-- Ability to have multiple reports in a single page (dashboards)
+- Providing APM reports via a web browser
+- A number of report types e.g. charts, tabular, dashboards, topology graphs
 - Supporting output formats: .xlsx, .pdf
 - Simple to install and use
 
