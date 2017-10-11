@@ -1,3 +1,5 @@
+**As the systems of operators become more and more complex, one of their projects may contain hundreds of servers and middleware. The work load of maintenance is very heavy. APM is a tool or platform that the maintainers need. With APM, people can easily know all the status of the machines from visualized statistic data and get in-time alerts based on pre-defined rules.** 
+
 <h3>APM Demo - Web Reporting</h3>
 
 - Providing APM reports via a web browser
